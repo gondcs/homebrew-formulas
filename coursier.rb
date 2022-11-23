@@ -14,8 +14,6 @@ class Coursier < Formula
     sha256 "3fe5d221949a8cfeee20d487e31c656f00fe74ee876f581105d8b2594633387a"
   end
 
-  depends_on "openjdk"
-
   def install
     bin.install "cs-x86_64-apple-darwin" => "cs"
     resource("jar-launcher").stage { bin.install "coursier" }
